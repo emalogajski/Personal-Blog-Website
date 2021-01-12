@@ -43,6 +43,19 @@ h1 {
     flex-direction: column;
 }
 
+#thi {
+    grid-area: th;    
+    flex-direction: column;
+    background-color: #9b5151;
+    padding: 15px;
+}
+
+#thi p {
+    margin: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 .pic {
     border-radius: 50%;
     height: 80%;
@@ -74,20 +87,6 @@ ul li h5 {
 .stress {
     text-decoration: underline;
 }
-
-#thi {
-    grid-area: th;    
-    flex-direction: column;
-    background-color: #9b5151;
-    padding: 15px;
-}
-
-#thi p {
-    margin: 10px;
-    text-align: justify;
-    text-justify: inter-word;
-}
-
 
 #col2 blockquote { 
     margin: 0 auto;
@@ -135,13 +134,6 @@ ul li h5 {
     text-decoration: none;
   }
 
-  .back {
-    color: #ff9999;
-    font-family: fantasy, sans-serif;
-    text-decoration: none;
-    padding: 10px;
-  }
-  
   .fa:hover {
     background: #ff9999;
     color: #9b5151;
@@ -149,13 +141,6 @@ ul li h5 {
     line-height: 31px;
   }
 
-  .back:hover {
-    background: #ff9999;
-    color: #9b5151;
-    width: auto;
-    line-height: auto;
-  }
-  
   .fa-facebook {
     background: #9b5151;
     color: #ff9999;
@@ -171,6 +156,20 @@ ul li h5 {
     color: #ff9999;
   }
 
+  .back {
+    color: #ff9999;
+    font-family: fantasy, sans-serif;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .back:hover {
+    background: #ff9999;
+    color: #9b5151;
+    width: auto;
+    line-height: auto;
+  }
+  
   #social {
       grid-area: social;
       background-color: #9b5151;
@@ -183,6 +182,7 @@ ul li h5 {
         display: flex;
         flex-direction: column;
     }
+
     #col2 blockquote    { 
         padding: 1em;
         border-left: 5px solid #9b5151;
@@ -230,23 +230,5 @@ ul li h5 {
     }   
 
 }
-
-  /* @media only screen and (max-width: 768px) {
-    .container {
-        display: grid;
-        width: 100%;
-        row-gap: 10px;
-        column-gap: 5px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: min-content min-content;
-        grid-template-areas:
-        "top top"
-        "first ."
-        "sec ."
-        "th ."
-        "social social";
-        justify-content: center;
-    }
-  } */
 
 

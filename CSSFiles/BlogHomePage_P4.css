@@ -1,10 +1,11 @@
 
-#bthree {
-    background-image: url(../Images/zen.jpg);
+#bone {
+    background-image: url(../Images/good-stress.jpg);
     background-size: cover;
     width: 300px;
     height: 141px;
     color: transparent;
+    border-radius: 15px;
 }
 
 #btwo {
@@ -14,16 +15,14 @@
     height: 141px;
     color: transparent;
     border: solid rgb(126, 118, 118);
+    border-radius: 15px;
 }
 
-#bone {
-    background-image: url(../Images/good-stress.jpg);
+#bthree {
+    background-image: url(../Images/zen.jpg);
     background-size: cover;
     width: 300px;
     height: 141px;
     color: transparent;
-}
-
-#btwo, #bone, #bthree {
     border-radius: 15px;
 }
