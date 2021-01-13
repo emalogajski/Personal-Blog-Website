@@ -62,12 +62,13 @@ ul {
     margin: 0px;
 }
 
-li {
+.box ul li {
     float: left;
     width: 25%;
 }
 
 ul.foot li {
+    float: left;
     width: 33%;
 }
 
