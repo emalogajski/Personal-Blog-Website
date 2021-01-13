@@ -1,5 +1,5 @@
 
-#bone {
+.goodstress {
     background-image: url(../Images/good-stress.jpg);
     background-size: cover;
     width: 300px;
@@ -8,7 +8,7 @@
     border-radius: 15px;
 }
 
-#btwo {
+.avoidbad {
     background-image: url(../Images/stress-bad.jpg);
     background-size: cover;
     width: 300px;
@@ -18,7 +18,7 @@
     border-radius: 15px;
 }
 
-#bthree {
+.breathe {
     background-image: url(../Images/zen.jpg);
     background-size: cover;
     width: 300px;

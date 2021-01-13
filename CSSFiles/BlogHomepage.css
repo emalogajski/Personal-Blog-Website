@@ -29,7 +29,7 @@ body {
     align-items: center;
 }
 
-#title {
+.title {
     grid-area: top;
     font-size: 24px;
     font-family: fantasy, sans-serif;
@@ -42,6 +42,26 @@ h1 {
     margin: 0px;
 }
 
+.nav {
+    grid-area: nav;
+    height: 90px;
+}
+
+.info1 {
+    grid-area: left;
+    flex-direction: column;
+}
+
+.info2 {
+    grid-area: center;
+    flex-direction: column;
+}
+
+.info3 {
+    grid-area: right;
+    flex-direction: column;
+}
+
 button {
     box-shadow: 0px 0px 0px transparent;
     border: 0px solid transparent;
@@ -49,30 +69,21 @@ button {
     cursor: pointer;
 }
 
-#one {
-    grid-area: left;
-    flex-direction: column;
-}
-
-#two {
-    grid-area: center;
-    flex-direction: column;
-}
-
-#three {
-    grid-area: right;
-    flex-direction: column;
-}
-
-#list {
-    grid-area: nav;
-    height: 90px;
-}
-
-#list2 {
+.footer {
     grid-area: next;
     height: 90px;
-    display: block;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ff9999;
+    width: 100%;
+    font-family: fantasy, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 32px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -80,7 +91,7 @@ button {
         grid-template-columns: 1fr;
         grid-template-rows: min-content min-content min-content min-content min-content;
         grid-template-areas:
-            "top top"
+            "top"
             "nav"
             "left"
             "center"
@@ -89,92 +100,26 @@ button {
             "last";
     }
 
-    li {
+    .title {
+        font-size: 18px;
+    }
+
+    .goodstress, .avoidbad, .breathe {
+        width: 500px;
+        height: 200px;
+    }
+
+    .breathe h4, .goodstress h4 {
+        margin-right: 300px;
+    }
+
+    .avoidbad h4 {
+        margin-right: 280px;
+    }
+
+    ul.footernav li {
         float: left;
         width: 50%;
     }
 
-    #title {
-        font-size: 18px;
-    }
-
-    #bone {
-        background-image: url(../Images/good-stress.jpg);
-        background-size: cover;
-        width: 500px;
-        height: 200px;
-        color: transparent;
-    }
-
-    #btwo {
-        background-image: url(../Images/stress-bad.jpg);
-        background-size: cover;
-        width: 500px;
-        height: 200px;
-        color: transparent;
-        border: solid rgb(126, 118, 118);
-    }
-
-    #bthree {
-        background-image: url(../Images/zen.jpg);
-        background-size: cover;
-        width: 500px;
-        height: 200px;
-        color: transparent;
-    }
-
-    #bone:hover {
-        transform: scale(1.2) rotate(-35deg);
-        box-shadow: 0px 0px 0px transparent;
-        border: 0px solid transparent;
-        border-radius: 8px;
-        font-weight: 900;
-        font-size: 24px;
-        padding-bottom: 150px;
-        color: rgb(6, 187, 6);
-        text-shadow: 1px 1px 2px rgb(11, 90, 11);
-        transition: 0.8s ease-in-out;
-    }
-    
-    #btwo:hover {
-        transform: scale(1.2) rotate(35deg);
-        box-shadow: 0px 0px 0px transparent;
-        border: 0px solid transparent;
-        border-radius: 8px;
-        font-weight: 900;
-        font-size: 24px;
-        padding-bottom: 160px;
-        color: red;
-        text-shadow: 1px 1px 2px rgb(11, 90, 11);
-        transition: 0.8s ease-in-out;
-    }
-
-    #bthree:hover {
-        transform: scale(1.2) rotate(-35deg);
-        box-shadow: 0px 0px 0px transparent;
-        border: 0px solid transparent;
-        border-radius: 8px;
-        font-weight: 900;
-        font-size: 24px;
-        padding-bottom: 100px;
-        padding-right: 250px;
-        color: rgb(9, 84, 245);
-        text-shadow: 1px 1px 2px rgb(11, 90, 11);
-        transition: 0.8s ease-in-out;
-    }
-    
-    ul {
-        list-style-type: none;
-        padding: 0;
-        overflow: hidden;
-        background-color: #ff9999;
-        width: 100%;
-        font-family: fantasy, sans-serif;
-        margin-top: 10px;
-        margin-bottom: 32px;
-    }
-    h1 {
-        margin: 0px;
-        font-size: 32px;
-    }
 }
