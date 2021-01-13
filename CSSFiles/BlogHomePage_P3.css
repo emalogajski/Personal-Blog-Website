@@ -6,8 +6,6 @@
 
   @media only screen and (max-width: 768px) {
     .container {
-        display: flex;
-        flex-direction: column;
         margin: auto;
         width: 100%;
         row-gap: 10px;
@@ -22,7 +20,11 @@
         "last";
         justify-content: center;
     }
-    
+
+    .box {
+        flex-direction: column;
+    }
+
     li {
         float: left;
         width: 50%;
