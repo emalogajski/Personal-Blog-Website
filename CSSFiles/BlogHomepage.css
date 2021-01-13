@@ -66,10 +66,10 @@ button {
 
 #list {
     grid-area: nav;
-    height: 120px;
+    height: 90px;
 }
 
 #list2 {
     grid-area: next;
-    height: 120px;
+    height: 90px;
 }
