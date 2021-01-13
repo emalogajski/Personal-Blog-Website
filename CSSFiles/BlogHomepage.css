@@ -2,6 +2,10 @@
 @import "./BlogHomePage_P3.css";
 @import "./BlogHomePage_P4.css";
 
+body {
+    margin: 0;
+}
+
 .container {
     display: grid;
     width: 100%;
@@ -62,7 +66,7 @@ button {
 
 #list {
     grid-area: nav;
-    height: 90px;
+    height: 120px;
 }
 
 #list2 {
