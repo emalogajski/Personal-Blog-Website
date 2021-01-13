@@ -6,23 +6,11 @@
 
   @media only screen and (max-width: 768px) {
     .container {
-        margin: auto;
-        width: 100%;
-        row-gap: 10px;
-        column-gap: 5px;
-        grid-template-columns: 1fr;
-        grid-template-rows: min-content;
-        grid-template-areas: 
-        "top"
-        "nav"
-        "left"
-        "next"
-        "last";
-        justify-content: center;
-    }
-
-    .box {
+        display: flex;
         flex-direction: column;
+        margin: auto;
+        width: 100vw;
+        justify-content: center;
     }
 
     li {
