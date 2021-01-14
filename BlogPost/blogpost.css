@@ -1,4 +1,4 @@
-@import "./BlogHomePage.css";
+@import "../BlogHomepage/container.css";
 
 .container {
     display: grid;
