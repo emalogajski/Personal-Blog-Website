@@ -1,0 +1,116 @@
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info1 {
+    grid-area: left;
+    flex-direction: column;
+}
+
+.info2 {
+    grid-area: center;
+    flex-direction: column;
+}
+
+.info3 {
+    grid-area: right;
+    flex-direction: column;
+}
+
+button {
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    cursor: pointer;
+}
+
+h4 {
+    display: flex;
+    font-family: fantasy, sans-serif;
+    font-weight: bolder;
+    height: 5px;
+    color: #753c3c;
+}
+
+.avoidbad h4 {
+    margin-right: 130px;
+}
+
+.breathe h4 {
+    margin-right: 150px;
+}
+
+
+.goodstress {
+    background-image: url(../Images/good-stress.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 141px;
+    color: transparent;
+    border-radius: 15px;
+}
+
+.avoidbad {
+    background-image: url(../Images/stress-bad.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 141px;
+    color: transparent;
+    border: solid rgb(126, 118, 118);
+    border-radius: 15px;
+}
+
+.breathe {
+    background-image: url(../Images/zen.jpg);
+    background-size: cover;
+    width: 300px;
+    height: 141px;
+    color: transparent;
+    border-radius: 15px;
+}
+
+.default:hover {
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    border-radius: 8px;
+    font-weight: 900;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px rgb(11, 90, 11);
+    transition: 0.8s ease-in-out;
+}
+
+.goodstress:hover {
+    transform: scale(1.5) rotate(-35deg);
+    color: rgb(6, 187, 6);
+    padding-bottom: 110px;
+}
+
+.avoidbad:hover {
+    transform: scale(1.5) rotate(35deg);
+    color: red;
+    padding-bottom: 110px;
+}
+
+.breathe:hover {
+    transform: scale(1.5) rotate(-35deg);
+    color: rgb(9, 84, 245);
+    padding-bottom: 50px;
+    padding-right: 120px;
+}
+
+@media only screen and (max-width: 768px) {
+    .goodstress, .avoidbad, .breathe {
+        width: 500px;
+        height: 200px;
+    }
+
+    .breathe h4, .goodstress h4 {
+        margin-right: 300px;
+    }
+
+    .avoidbad h4 {
+        margin-right: 280px;
+    }
+}

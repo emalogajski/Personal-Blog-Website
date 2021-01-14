@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+    width: 100%;
+    margin: auto;
+    row-gap: 10px;
+    column-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content min-content min-content;
+    grid-template-areas: 
+    "top top top"
+    "nav nav nav"
+    "left center right"
+    "next next next"
+    ". last .";
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content min-content min-content min-content;
+        grid-template-areas:
+            "top"
+            "nav"
+            "left"
+            "center"
+            "right"
+            "next"
+            "last";
+    }
+}
