@@ -49,17 +49,47 @@ li a:hover:not(.active) {
 }
 
 .author {
-    grid-area: last;
+    display: block;
     animation: blinker 1.7s linear infinite;
 }
 
-.author a {
-    color: #753c3c;
+@media only screen and (min-width: 768px) {
+    ul.footernav li {
+        float: left;
+        width: 33%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
+    .nav ul li {
+        width: 50%;
+    }
+
     ul.footernav li {
         float: left;
         width: 50%;
+    }
+
+    ul.footernav .lastfooternavpoint {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .nav ul {
+        margin-top: 110px;
+    }
+
+    .nav ul li {
+        width: 100%;
+    }
+
+    .footernav {
+        margin-top: 55px;
+    }
+    
+    ul.footernav li {
+        float: left;
+        width: 100%;
     }
 }
