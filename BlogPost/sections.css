@@ -1,0 +1,56 @@
+.avatar {
+    grid-area: first;
+    flex-direction: column;
+}
+
+.who {
+    grid-area: sec;    
+    flex-direction: column;
+}
+
+.about {
+    grid-area: th;    
+    flex-direction: column;
+    background-color: #9b5151;
+    padding: 15px;
+}
+
+.about p {
+    margin: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.pic {
+    border-radius: 50%;
+    height: 80%;
+    width: 80%;
+    border: solid 5px rgb(78, 34, 12);
+}
+
+.city {
+    font-style: italic;
+}
+
+ul {
+    font-family: "Lucida Console", Courier, monospace;
+    list-style-type: square;
+    background: #9b5151;
+    padding: 20px;
+}
+
+ul li {
+    background: #ff9999;
+    padding: 5px;
+    margin-left: 35px;
+}
+
+ul li h5 {
+    margin: 2px;
+}
+
+@media only screen and (max-width: 500px) {
+    ul {
+        width: 91%;
+    } 
+}

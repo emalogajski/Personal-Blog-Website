@@ -1,0 +1,32 @@
+@import "../BlogHomepage/container.css";
+@import "./headerandfooter.css";
+@import "./quotes.css";
+@import "./sections.css";
+
+.container {
+    display: grid;
+    width: 100%;
+    row-gap: 10px;
+    column-gap: 5px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: min-content min-content;
+    grid-template-areas:
+    "top top"
+    "first ."
+    "sec ."
+    "th ."
+    "social social";
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 500px) {
+    .box {
+        flex-direction: column;
+    }
+}
