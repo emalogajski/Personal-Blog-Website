@@ -1,23 +1,6 @@
-.nav {
-    grid-area: nav;
-    height: 90px;
-}
-
-.nav ul li {
-    float: left;
-    width: 25%;
-}
-
-.footer {
-    grid-area: next;
-    height: 90px;
-    margin-top: 20px;
-}
-
 ul {
     list-style-type: none;
     padding: 0;
-    overflow: hidden;
     background-color: #ff9999;
     width: 100%;
     font-family: fantasy, sans-serif;
@@ -25,12 +8,41 @@ ul {
     margin-bottom: 32px;
 }
 
-.footernav ul li {
+.nav {
+    grid-area: nav;
+    height: 90px;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
     float: left;
-    width: calc(100vw / 3);
+    height: 56px;
+    flex: 1;
+}
+
+.footer {
+    grid-area: next;
+    position: relative;
+}
+
+.footer ul {
+    display: flex;
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 0;
+    bottom: 0;
+}
+
+.footer ul li {
+    flex: 1;
 }
 
 li a {
+    box-sizing: border-box;
+    height: 100%; 
     display: block;
     color: #753c3c;
     text-align: center;
@@ -38,12 +50,7 @@ li a {
     text-decoration: none;
   }
   
-li a:hover:not(.active) {
-    background-color: #9b5151;
-    color: white;
-}
-
-.active {
+li a:hover, .active {
     background-color: #9b5151;
     color: white;
 }
@@ -53,30 +60,25 @@ li a:hover:not(.active) {
     animation: blinker 1.7s linear infinite;
 }
 
-@media only screen and (min-width: 768px) {
-    ul.footernav li {
-        float: left;
-        width: 33%;
-    }
-}
-
 @media only screen and (max-width: 768px) {
+    .nav ul {
+        flex-wrap: wrap;
+    }
+
     .nav ul li {
-        width: 50%;
+        flex: 1 0 50%;
+        display: inline-block;
     }
 
     ul.footernav li {
         float: left;
         width: 50%;
-    }
-
-    ul.footernav .lastfooternavpoint {
-        width: 100%;
     }
 }
 
 @media only screen and (max-width: 500px) {
     .nav ul {
+        display: block;
         margin-top: 110px;
     }
 
@@ -84,12 +86,11 @@ li a:hover:not(.active) {
         width: 100%;
     }
 
-    .footernav {
-        margin-top: 55px;
+    .footer ul {
+        display: block;
     }
-    
+
     ul.footernav li {
-        float: left;
         width: 100%;
     }
 }
