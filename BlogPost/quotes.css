@@ -45,3 +45,35 @@
         margin-bottom: 20px;
     }
 }
+
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+    .quote:nth-child(odd) blockquote {
+        margin-inline-start: 40px;
+    }
+
+    .quote:nth-child(even) blockquote {
+        margin-inline-end: 40px;
+    }
+
+    .one blockquote {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .quote:nth-child(odd) blockquote {
+        margin-inline-start: 40px;
+    }
+
+    .quote:nth-child(even) blockquote {
+        margin-inline-end: 40px;
+    }
+
+    .one blockquote {
+        margin-top: 0;
+    }
+
+    .three blockquote {
+        margin-bottom: 20px;
+    }
+}

@@ -85,3 +85,19 @@ ul li h5 {
         width: calc(100vw/2);
     }
 }
+
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+    .who {
+        margin-left: 0;
+    }
+
+    .pic {
+        width: calc(100vw/3);
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .who {
+        margin-left: 0;
+    }
+}
