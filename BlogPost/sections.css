@@ -64,7 +64,24 @@ ul li h5 {
 }
 
 @media only screen and (max-width: 500px) {
-    ul {
-        width: 91%;
+    .topbox {
+        flex-direction: column;
     } 
+
+    .avatar {
+        display: flex;
+        justify-content: center;
+    }
+
+    .who ul {
+        padding: 0;
+    }
+
+    .about {
+        padding: 15px 40px;
+    }
+
+    .pic {
+        width: calc(100vw/2);
+    }
 }

@@ -28,18 +28,20 @@
 }
 
 @media only screen and (max-width: 500px) {
-    /* .quote blockquote {
-        width: 100%;
+    .quote:nth-child(odd) blockquote {
+        margin-inline-start: 30px;
     }
-    
-    .two blockquote {
-        border-left: none;
-        text-align: end;
-        margin-top: 20px;
+
+    .quote:nth-child(even) blockquote {
+        margin-inline-end: 30px;
+    }
+
+    .one blockquote, .two blockquote {
+        margin-bottom: 50px;
+        margin-top: 0;
     }
 
     .three blockquote {
-        margin-left: 0px;
-        margin-bottom: 50px;
-    } */
+        margin-bottom: 20px;
+    }
 }
