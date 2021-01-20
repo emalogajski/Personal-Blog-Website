@@ -1,30 +1,42 @@
-.avatar {
+.author {
     grid-area: first;
-    flex-direction: column;
+}
+
+.topbox {
+    display: flex;
+}
+
+.avatar {
+    padding: 35px 35px 20px 35px;
 }
 
 .who {
-    grid-area: sec;    
+    display: flex;
     flex-direction: column;
+    margin-left: 55px;
+    justify-content: flex-end;
 }
 
 .about {
-    grid-area: th;    
     flex-direction: column;
-    background-color: #9b5151;
     padding: 15px;
 }
 
 .about p {
+    color:#753c3c;
     margin: 10px;
     text-align: justify;
     text-justify: inter-word;
 }
 
+.quotes {
+    grid-area: second;
+    margin-bottom: 20px;
+}
+
 .pic {
     border-radius: 50%;
-    height: 80%;
-    width: 80%;
+    width: calc(100vw/3.1);
     border: solid 5px rgb(78, 34, 12);
 }
 
@@ -32,15 +44,17 @@
     font-style: italic;
 }
 
+.who ul {
+    color:#753c3c;
+}
+
 ul {
     font-family: "Lucida Console", Courier, monospace;
     list-style-type: square;
-    background: #9b5151;
     padding: 20px;
 }
 
 ul li {
-    background: #ff9999;
     padding: 5px;
     margin-left: 35px;
 }

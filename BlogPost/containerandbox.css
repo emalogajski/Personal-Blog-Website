@@ -1,4 +1,4 @@
-@import "./headerandfooter.css";
+@import "./footer.css";
 @import "./quotes.css";
 @import "./sections.css";
 
@@ -7,21 +7,22 @@
     width: 100%;
     row-gap: 10px;
     column-gap: 5px;
-    grid-template-columns: 1fr 2fr;
     grid-template-rows: min-content min-content;
     grid-template-areas:
-    "top top"
-    "first ."
-    "sec ."
-    "th ."
-    "social social";
+    "first"
+    "second"
+    "social";
     justify-content: center;
+}
+
+body {
+    margin: 2px;
+    background-color: #f577775d;
 }
 
 .box {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 @media only screen and (max-width: 500px) {

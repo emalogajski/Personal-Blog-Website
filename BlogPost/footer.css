@@ -1,18 +1,3 @@
-h1 {
-    color: #753c3c;
-}
-
-.title {
-    grid-area: top;
-    font-family: fantasy, sans-serif;
-    text-align: center;
-    word-wrap: break-word;
-}
-
-.stress {
-    text-decoration: underline;
-}
-
 .fa {
     padding: 10px;
     font-size: 30px;
