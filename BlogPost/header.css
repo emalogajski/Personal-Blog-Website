@@ -1,0 +1,51 @@
+.back {
+    color: #ff9999;
+    font-family: fantasy, sans-serif;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+.back p {
+    display: block;
+    margin: 0 auto;
+}
+
+.back:hover {
+    background: #ff9999;
+    color: #9b5151;
+    width: auto;
+    line-height: auto;
+  }
+
+header {
+    grid-area: header;
+    background-color: #9b5151;
+    margin: 15px 0 15px 0;
+    font-size: 20px;
+    position: relative;
+    width: 28%;
+}
+
+header a {
+  display: flex;
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+      margin: 0;
+      width: 50%;
+    }
+}
+
+@media only screen and (min-width: 501px) {
+    header {
+      margin: 0;
+      width: 40%;
+    }
+}
+
+@media only screen and (min-width: 650px) and (max-width: 750px) {
+    header {
+        width: 32%;
+    }
+}

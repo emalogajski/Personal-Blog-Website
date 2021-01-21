@@ -1,92 +1,76 @@
+footer {
+  grid-area: social;
+}
+
 .fa {
-    padding: 10px;
-    font-size: 30px;
-    line-height: 31px;
-    width: 80px;
-    text-align: center;
-    text-decoration: none;
+  padding: 10px;
+  font-size: 30px;
+  line-height: 31px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
   }
 
-  .fa:hover {
-    background: #ff9999;
-    color: #9b5151;
-    width: 80px;
-    line-height: 31px;
-  }
+.fa:hover {
+  display: flex;
+  background: #ff9999;
+  color: #9b5151;
+  width: auto;
+}
 
-  .fa-facebook {
-    background: #9b5151;
-    color: #ff9999;
-  }
+.fa-facebook {
+  background: #9b5151;
+  color: #ff9999;
+}
   
-  .fa-twitter {
-    background: #9b5151;
-    color: #ff9999;
-  }
+.fa-twitter {
+  background: #9b5151;
+  color: #ff9999;
+}
 
-  .fa-linkedin {
-    background: #9b5151;
-    color: #ff9999;
-  }
+.fa-linkedin {
+  background: #9b5151;
+  color: #ff9999;
+}
 
-  .back {
-    color: #ff9999;
-    font-family: fantasy, sans-serif;
-    text-decoration: none;
-    padding: 10px;
+.socialmedia {
+  grid-area: social;
+  background-color: #9b5151;
+  margin: 15px 0 15px 0;
+  font-size: 20px;
+  position: relative;
+}
+
+.socialmedia a {
+  display: flex;
+  flex: 1;
+}
+
+@media only screen and (max-width: 500px) {
+  .fa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  
-  .back:hover {
-    background: #ff9999;
-    color: #9b5151;
-    width: auto;
-    line-height: auto;
-  }
-  
+    
   .socialmedia {
-      grid-area: social;
-      background-color: #9b5151;
-      margin: 15px 0 15px 0;
-      font-size: 20px;
-      position: relative;
+    display: flex;
   }
+}
 
-  @media only screen and (max-width: 500px) {
-    .fa {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+@media only screen and (min-width: 501px) {
+  .fa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
     
-    .socialmedia {
-      display: flex;
-    }
-
-    .back p {
-      margin: 0;
-      text-align: center;
-    }
+  .socialmedia a {
+    flex: 1;
   }
 
-  @media only screen and (min-width: 501px) {
-    .fa {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .socialmedia a {
-      flex: 1;
-    }
-
-    .socialmedia {
-      display: flex;
-      margin: 0;
-    }
-
-    .back p {
-      margin: 0;
-      text-align: center;
-    }
+  .socialmedia {
+    display: flex;
+    margin: 0;
   }
-
+}
