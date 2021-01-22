@@ -4,6 +4,12 @@
     align-items: center;
 }
 
+.information {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+
 .info1 {
     grid-area: left;
     flex-direction: column;
@@ -113,15 +119,32 @@ h4 {
     .avoidbad h4 {
         margin-right: 280px;
     }
+
+    .goodstress:hover, .breathe:hover {
+        transform: rotate(-35deg);
+    }
+    
+    .avoidbad:hover {
+        transform: rotate(35deg);
+    }
+
 }
 
 @media only screen and (max-width: 500px) {
     .info1 {
-        margin-top: 110px;
+        margin-top: 30px;
     }
 
     .goodstress, .avoidbad, .breathe {
         width: 350px;
         height: 220px;
+    }
+
+    .goodstress:hover, .breathe:hover {
+        transform: rotate(-35deg);
+    }
+    
+    .avoidbad:hover {
+        transform: rotate(35deg);
     }
 }

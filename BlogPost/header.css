@@ -1,5 +1,6 @@
 .back {
-    color: #ff9999;
+    /* color: #ff9999; */
+    color: #9b5151;
     font-family: fantasy, sans-serif;
     text-decoration: none;
     padding: 10px;
@@ -11,15 +12,16 @@
 }
 
 .back:hover {
-    background: #ff9999;
-    color: #9b5151;
+    /* background: #ff9999; */
+    /* color: #9b5151; */
+    font-style: oblique;
     width: auto;
     line-height: auto;
   }
 
 header {
     grid-area: header;
-    background-color: #9b5151;
+    /* background-color: #9b5151; */
     margin: 15px 0 15px 0;
     font-size: 20px;
     position: relative;

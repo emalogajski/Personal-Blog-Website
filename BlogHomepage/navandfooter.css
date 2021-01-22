@@ -10,11 +10,13 @@ ul {
 
 .nav {
     grid-area: nav;
-    height: 90px;
+    background: border-box #ff9999;
 }
 
 .nav ul {
     display: flex;
+    width: 75vw;
+    margin: 0;
 }
 
 .nav ul li {
@@ -26,18 +28,21 @@ ul {
 .footer {
     grid-area: next;
     position: relative;
+    background: #ff9999;
+    height: 56px;
 }
 
 .footer ul {
     display: flex;
     position: absolute;
-    margin-top: 0;
-    margin-bottom: 0;
-    bottom: 0;
+    margin: 0;
+    width: 75vw;
+    height: 100%;
 }
 
 .footer ul li {
     flex: 1;
+    background: #ff9999;
 }
 
 li a {
@@ -50,7 +55,7 @@ li a {
     text-decoration: none;
   }
   
-li a:hover, .active {
+li a:hover {
     background-color: #9b5151;
     color: white;
 }
@@ -63,6 +68,7 @@ li a:hover, .active {
 @media only screen and (max-width: 768px) {
     .nav ul {
         flex-wrap: wrap;
+        width: 85vw;
     }
 
     .nav ul li {
@@ -72,14 +78,18 @@ li a:hover, .active {
 
     ul.footernav li {
         float: left;
-        width: 50%;
+        width: 85vw;
+    }
+
+    .copyright a {
+        padding: 0;
     }
 }
 
 @media only screen and (max-width: 500px) {
     .nav ul {
         display: block;
-        margin-top: 110px;
+        width: 100vw;
     }
 
     .nav ul li {
@@ -88,6 +98,7 @@ li a:hover, .active {
 
     .footer ul {
         display: block;
+        width: 100vw;
     }
 
     ul.footernav li {
